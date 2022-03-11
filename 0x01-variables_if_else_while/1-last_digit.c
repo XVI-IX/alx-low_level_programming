@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - function to perform some relational operations on random number n
  *
@@ -13,21 +14,21 @@ int main(void)
 
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
-		char *s = "Last digit of";
-		char *e = "and is greater than 5";
+		m = n % 10
 
-		if ((n % 10) > 5)
+		if (m > 5)
 		{
-			printf("%s %i %s\n", s, n, e);
+			printf("Last digit of %i is %i and is greater than 5\n",
+			n, m);
 		}
-		else if ((n % 10) == 0)
+		else if (m == 0)
 		{
-			printf("%s %i and is 0\n", s, n);
+			printf("Last digit of %i and is 0\n", n);
 		}
-		else if ((n % 10) < 6 && != 0)
+		else if (m < 6 && m != 0)
 		{
-			e = "and is less than 6 and not 0";
-			printf("%s %i %s\n", s, n, e);
+			printf("Last digit of %i is %i and is less than 6 and not 0\n",
+			n, m);
 		}
 		return (0);
 }
