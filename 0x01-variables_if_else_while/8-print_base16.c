@@ -11,7 +11,7 @@ int main(void)
 
 	for ( ; i <= 9; )
 	{
-		putchar(i % 0 + '0');
+		putchar(i + '0');
 		i++;
 	}
 	while (c <= "f")

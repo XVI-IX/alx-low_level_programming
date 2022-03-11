@@ -13,4 +13,6 @@ int main(void)
 		putchar(i % 10 + '0');
 		i++;
 	}
+
+	return (0);
 }
