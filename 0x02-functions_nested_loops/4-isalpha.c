@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _isalpha - Entry point into program
  * @c: charcater to be checked
@@ -10,7 +10,11 @@
  */
 int _isalpha(int c)
 {
-	if (isalpha(c))
+	if ((c > 64 && c < 91))
+	{
+		return (1);
+	}
+	else if (c > 96 && c < 123)
 	{
 		return (1);
 	}

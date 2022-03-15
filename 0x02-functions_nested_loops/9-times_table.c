@@ -1,19 +1,43 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * times_table - Function to print 9 times table in terminal
- *
- * Return: Always 0
- *
+ * times_table - print the 9 times table, starting with 0
+ * Return: 0
  */
 void times_table(void)
 {
-	int i, j = 0;
-	for (i; i <= 9; i++)
+	int x = 0;
+	int y, z;
+
+	while (x < 10)
 	{
-		for (j; j <= 9; j++)
+		y = 0;
+		while (y < 10)
 		{
-			printf("%d:, ", (i * j));
+			z = x * y;
+
+			if (z > 9)
+			{
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
+			}
+			else if (y != 0)
+			{
+				_putchar(' ');
+				_putchar(z + '0');
+			}
+			else
+			{
+				_putchar(z + '0');
+			}
+			
+			if (y != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			y++;
 		}
-		putchar('\n');
+		_putchar('\n');
+		x++;
 	}
 }
