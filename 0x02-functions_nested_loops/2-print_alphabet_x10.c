@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 
 	for (; i < 10; )
 	{
-		while (a <= z)
+		while (a <= 'z')
 		{
 			putchar(a);
 			a++;
@@ -26,6 +26,4 @@ void print_alphabet_x10(void)
 
 		i++;
 	}
-	return (0);
-
 }
