@@ -3,7 +3,7 @@
 /**
  * mul - multiplies two integers
  *
- * Returns - product of multiplication
+ * Return: product of multiplication
  *
  */
 int mul(int a, int b)
