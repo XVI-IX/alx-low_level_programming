@@ -8,6 +8,7 @@
 void print_most_numbers(void)
 {
 	int i = 0;
+
 	for (; i < 10, i++)
 	{
 		while (i != 2 || i != 4)
@@ -15,6 +16,5 @@ void print_most_numbers(void)
 			_putchar(i);
 		}
 	}
-	
 	_putchar('\n');
 }

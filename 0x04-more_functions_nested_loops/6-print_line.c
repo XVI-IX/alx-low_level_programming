@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_line - prints out a straight line
+ * @n: number of _ to print in line length
  *
  * Return: Always 0
  */
