@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int _putchar(int);
+int _putchar(char);
 int _isupper(int);
 int __isdigit(int);
 int mul(int, int);
