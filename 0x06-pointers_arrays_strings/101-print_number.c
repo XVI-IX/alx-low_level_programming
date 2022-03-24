@@ -22,7 +22,7 @@ void print_number(int n)
 		{
 			copy /= 10, size *= 10;
 		}
-		while (sise > 0)
+		while (size > 0)
 		{
 			nth = n / size;
 			_putchar('0' + nth);

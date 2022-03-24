@@ -16,7 +16,7 @@ char *rot13(char *s)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == alphabet[j])
+			if (s[i] == alpha[j])
 			{
 				s[i] = rot_it[j];
 				j = 52;
